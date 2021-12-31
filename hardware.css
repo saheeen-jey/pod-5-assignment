@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');	
+
+.image
+{
+	/* Separate the text from the images */
+	padding:20px;
+	
+	/* Place the images on the right side of the screen. */
+	float: right;
+}
+
+.notebookImages
+{	
+	/* Add a light-blue border around each of the photos. */
+	padding: 10px;
+	background-color: white;
+	
+	/* Center each photo. */
+	margin-left: 40%;
+}
+
+.imageCaptionText
+{	
+	left:20px;
+	/* Set the margins of the person quoted */
+	margin-left: 2%;
+	margin-right: 2%;
+	/* Set preferences of the body text. */
+	color: white;
+	font-family: 'Oswald';
+	font-size: 18px;
+	font-style: italic;
+	
+	/* Center the captions under the image. */
+	text-align: center;
+}
+
+
+.homePageParagraphText 
+{
+	/* Set the margins of the person quoted */
+	margin-left: 2%;
+	margin-right: 2%;
+	
+	/* Set preferences of the body text. */
+	color: white;
+	font-family: 'Oswald';
+	font-size: 20px;
+}
+
+.journalDate
+{
+	/* Set the margin of the journal date */
+	margin-left: 2%;
+	margin-right: 2%;
+	
+	/* Set preferences of the body text. */
+	color: white;
+	font-family: 'Oswald';
+	font-size: 22px;	
+}
+
+.personQuoted
+{
+	/* Set the margins for the person quoted. */
+	margin-left: 65%;
+	margin-right: 10%;
+	
+	/* Stylize the text of the person quoted */
+	color: white;
+	font-family: 'Oswald';
+	font-size: 20px;
+	font-style: italic;
+}
+
+h3
+{
+	/* Set the margins for the person quoted. */
+	margin-left: 2%;
+	
+	/* Stylize the text of the person quoted */
+	color: white;
+	font-family: 'Oswald';
+	font-size: 22px;
+}
+
+
+
+hr
+{
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.personQuotedWithoutImage
+{
+	/* Set the margins for the person quoted. */
+	margin-left: 85%;
+	margin-right: 2%;
+	/* Set the colour of the person quoted */
+	color: white;
+	
+	font-family: 'Oswald';
+	font-size: 20px;
+	font-style: italic;
+}
+body, html 
+{
+	/* Set the height of the image. */
+    height: 100%;
+}
+
+body 
+{
+	/* Ensure the image fits the entire window. */
+	margin: 0;
+	
+	/* Set the background colour to navy blue. */
+	background-color: #000f28;
+	
+	text-align: justify;
+}
+
+.titleText 	{
+	/* Locate the text. */
+	position: absolute;
+	color: white;
+	top: 30%;
+	left: 5%;
+	
+	/* Set the font of the cover text */
+	font-family: "Oswald";
+	font-size: 65px;
+	
+	/* Ensure that the text remains fixed contrasting the parralax. */
+	background-attachment: fixed;
+}
+
+.subTitleText 
+{
+	/* Set position of text. */
+	position: absolute;
+	top: 45%;
+	left: 5%;
+	
+	/* Stylize the text */
+	color: white;
+	font-family: "Oswald";
+	font-size: 35px;
+}
+
+/* Navigation bar */
+
+a 
+{
+	/* Display an underline relative to the word. */
+	position: relative;
+  
+	/* Set colour of the links */
+	color: white;
+  
+	/* Ensure that the links do not have an underline prior to being hovered over. */
+	text-decoration: none;
+	
+	/* Set the time for duration of the change in text colour. */
+	transition-duration: 0.3s
+}
+
+a:before 
+{
+	content: "";
+  
+	position: absolute;
+	
+	/* Display an underline base on the width of the word.*/
+	width: 100%;
+  
+	/* Set the thickness of the underline. */
+	height: 4px;
+  
+	/* Set underline to display below the word. */
+	bottom: 0;
+  
+	/* Choose colour for the underline. */
+	background-color: white;
+  
+	/* Intialize the animated underline to transition to scaleX(1) */
+	transform: scaleX(0);
+  
+	/* Set the time the animation takes to complete. */
+	transition: 0.3s;
+	transition-duration: 0.3s;
+}
+
+a:hover:before
+{
+	/* Animate the underline */
+	transform: scaleX(1);
+	/* Set colour of underline when hovered over. */
+	background-color: gray;
+}
+
+a:hover
+{
+	/* Set colour of text when hovered over. */
+	color: gray;
+}
+
+img
+{
+	/* Seperate the images from the body text */
+	padding-left: 10px;
+	
+	/* Align the images with the right margin. */
+	margin-right: 2%;
+}
+
+.home
+{
+	/* Ensure that the home link isn't tocuh the left side of the window. */
+	padding-left: 25px;
+	
+	/* Separate the home link from the other links. */
+	padding-right: 55px;
+	
+	/* Make the links appear horizontally, */
+	float: left;
+	
+}
+
+.navigationBar
+{
+	/* Position navigation bar text. */
+	position: absolute;
+	top: 20px;
+	
+	/* Ensure that the navigation bar remains fixed on the screen. */
+	color: gray;
+	
+	/* Remove the bullet points provided by the list originally. */
+	list-style-type: none;
+	
+	/* Set the font family of the links */
+	font-family: "Oswald";
+	font-size: 30px;
+}
+
+.navigationBarLinks
+{
+	/* Separate other links by a specified number of pixels */
+	padding-right: 55px;
+	
+	/* Make the links appear horizontally, */
+	float: left;
+}
+
+/* Index Page */
+.indexCoverImage
+{
+	
+	/* Set the desired background image. */
+    background-image: url("space.jpg");
+	
+	/* Set the image to fit the entire screen. */
+	height: 100%;
+	
+	/* Create the parralax scrolling effect. */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+/* References Page */
+
+.referenceCoverImage
+{
+	/* Set the desired background image. */
+    background-image: url("space2.jpg");
+	
+	/* Set the image to fit the entire screen. */
+	height: 100%;
+	
+	/* Create the parralax scrolling effect. */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Journal Entries page */
+
+.journalEntriesCoverImage
+{
+	/* Set the desired background image. */
+    background-image: url("space3.jpg");
+	
+	/* Set the image to fit the entire screen. */
+	height: 100%;
+	
+	/* Create the parralax scrolling effect. */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+.notebookCoverImage
+{
+	/* Set the desired background image. */
+    background-image: url("computerParts.jpg");
+	
+	/* Set the image to fit the entire screen. */
+	height: 100%;
+	
+	/* Create the parralax scrolling effect. */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+}
